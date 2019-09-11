@@ -1,0 +1,1302 @@
+body {
+  overflow-x: hidden; }
+
+.header {
+  width: 100%;
+  background: url("../img/mainbg.png") repeat;
+  background-size: cover;
+  display: flex;
+  position: relative; }
+  .header-toggler {
+    position: absolute;
+    top: 67px;
+    left: 65px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .header-toggler div:first-child {
+      width: 18px;
+      height: 1px;
+      border-top: 2px solid #B6B2B0; }
+    .header-toggler div:last-child {
+      width: 40px;
+      height: 1px;
+      border-top: 2px solid #B6B2B0; }
+  .header-sidebar {
+    width: 12.5%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; }
+    .header-sidebar-ahead {
+      opacity: 0.8;
+      color: white;
+      font-family: "Proxima Nova Lt";
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 95px;
+      margin-bottom: 35px;
+      margin-right: 45px; }
+      .header-sidebar-ahead img {
+        width: 20px; }
+      .header-sidebar-ahead div {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
+  .header-main {
+    display: flex;
+    width: 87.5%;
+    flex-direction: column; }
+    .header-main-mobiletext {
+      display: none;
+      opacity: 0.8;
+      color: white;
+      font-family: "Proxima Nova Lt";
+      font-size: 40px;
+      font-weight: 300;
+      letter-spacing: 0.2;
+      line-height: 50px;
+      width: 60%;
+      text-align: center; }
+    .header-main-header {
+      width: 92%;
+      height: 145px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .header-main-header-item.text {
+        width: 24%;
+        opacity: 0.8;
+        color: #ffffff;
+        font-family: "Futura Demi CTT";
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 22px;
+        margin-right: 60px; }
+      .header-main-header-item.nav {
+        width: 40%;
+        margin-right: 50px; }
+      .header-main-header-item.logo {
+        margin-right: 20px; }
+      .header-main-header-item-nav {
+        display: flex;
+        justify-content: space-between;
+        opacity: 0.8;
+        color: #CAC8C8;
+        font-family: "Proxima Nova Lt";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 0;
+        width: 100%; }
+        .header-main-header-item-nav-item span:hover {
+          cursor: pointer;
+          border-bottom: 2px solid #f1c961;
+          font-weight: 700;
+          color: white; }
+      .header-main-header-item-button {
+        width: 235px;
+        height: 53px;
+        box-shadow: 0 0 64px rgba(239, 192, 84, 0.49);
+        border-radius: 42px;
+        border: 3px solid #edbb4c;
+        background-image: linear-gradient(175deg, #f7df83 0%, #edbb4c 100%);
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        color: black;
+        font-family: "Proxima Nova Rg";
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        line-height: 0; }
+        .header-main-header-item-button:hover {
+          cursor: pointer; }
+        .header-main-header-item-button img {
+          max-width: 20px;
+          margin-left: 25px;
+          margin-right: 0; }
+        .header-main-header-item-button span {
+          margin-left: 5px; }
+      .header-main-header-item img {
+        width: 160px; }
+    .header-main-content {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 140px; }
+      .header-main-content-info {
+        width: 39%;
+        margin-top: 10px; }
+        .header-main-content-info-title {
+          margin-top: 60px;
+          margin-bottom: 0;
+          opacity: 0.9;
+          color: white;
+          font-family: "Proxima Nova Bl";
+          font-size: 50px;
+          font-weight: 900;
+          letter-spacing: 1.4px;
+          line-height: 60px; }
+          .header-main-content-info-title span {
+            color: #DEB95D; }
+        .header-main-content-info-descr {
+          margin-top: 27px;
+          margin-bottom: 0;
+          opacity: 0.9;
+          color: #CAC8C8;
+          font-family: "Proxima Nova Lt";
+          font-size: 14px;
+          font-weight: 300;
+          letter-spacing: 0.6px;
+          line-height: 29px; }
+          .header-main-content-info-descr span {
+            color: white;
+            font-family: 'Proxima Nova Rg';
+            font-weight: 700; }
+        .header-main-content-info-join {
+          width: 285px;
+          height: 60px;
+          margin-top: 45px;
+          width: 285px;
+          height: 65px;
+          box-shadow: 0 0 64px rgba(239, 192, 84, 0.49);
+          border-radius: 42px;
+          border: 3px solid #edbb4c;
+          background-image: linear-gradient(175deg, #f7df83 0%, #edbb4c 100%);
+          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 1;
+          color: black;
+          font-family: "Proxima Nova Rg";
+          font-size: 19px;
+          font-weight: 700;
+          letter-spacing: 0.53px;
+          line-height: 36px; }
+          .header-main-content-info-join:hover {
+            cursor: pointer; }
+          .header-main-content-info-join img {
+            max-width: 20px;
+            margin-left: 25px;
+            margin-right: 0; }
+          .header-main-content-info-join span {
+            margin-left: 5px; }
+          .header-main-content-info-join span {
+            font-family: 'Proxima Nova Bl';
+            font-weight: 900; }
+        .header-main-content-info-gift {
+          opacity: 0.8;
+          color: #CAC8C8;
+          font-family: "Proxima Nova Lt";
+          font-size: 13px;
+          font-weight: 300;
+          letter-spacing: 0;
+          line-height: 25px;
+          width: 51%;
+          text-align: center;
+          margin-top: 10px; }
+          .header-main-content-info-gift span {
+            font-family: 'Proxima Nova Rg';
+            font-weight: 700; }
+      .header-main-content-illustration {
+        position: relative;
+        margin-left: 110px;
+        margin-top: -10px; }
+        .header-main-content-illustration-salad {
+          width: 568px;
+          z-index: 4;
+          position: relative;
+          border-radius: 50%;
+          -webkit-box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.3);
+          -moz-box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.3);
+          box-shadow: 0 0 0 10px rgba(250, 250, 250, 0.3);
+          background-color: #655F5E; }
+        .header-main-content-illustration-zalina {
+          position: absolute;
+          top: 48%;
+          right: 54%;
+          width: 280px;
+          z-index: 5; }
+        .header-main-content-illustration-ad {
+          width: 180px;
+          height: 90px;
+          display: flex;
+          align-items: flex-end;
+          position: absolute;
+          right: 101%;
+          top: 82%;
+          opacity: 0.8;
+          color: white;
+          font-family: "Futura Demi CTT";
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 0.4px;
+          line-height: 22px; }
+          .header-main-content-illustration-ad p {
+            margin: 0; }
+          .header-main-content-illustration-ad img {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            width: 32px; }
+          .header-main-content-illustration-ad a {
+            color: #C8A958;
+            text-decoration: none; }
+      .header-main-content-papric {
+        position: absolute;
+        top: 125px;
+        right: 20px;
+        z-index: 2; }
+    .header-main::after {
+      content: '';
+      width: 37%;
+      height: calc(100% - 145px);
+      background-color: #efc257;
+      opacity: 0.3;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      border-top-left-radius: 150px; }
+
+.introduction {
+  width: 91%;
+  height: 290px;
+  background: url("../img/mainbg.png") repeat-x;
+  position: absolute;
+  right: 0;
+  top: 89%;
+  z-index: 3;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  display: flex; }
+  .introduction-describtion {
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    border-right: 1px solid rgba(202, 200, 200, 0.5); }
+    .introduction-describtion-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 39%; }
+      .introduction-describtion-item img {
+        width: 70px; }
+      .introduction-describtion-item p {
+        margin: 0; }
+      .introduction-describtion-item-header {
+        opacity: 1;
+        color: white;
+        font-family: "Proxima Nova Lt";
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 30px; }
+      .introduction-describtion-item-content {
+        text-align: center;
+        opacity: 1;
+        color: #CAC8C8;
+        font-family: "Proxima Nova Lt";
+        font-size: 13px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 23px; }
+  .introduction-quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    color: white;
+    font-family: "Futura Demi CTT";
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    line-height: 23px;
+    position: relative;
+    width: 52%; }
+    .introduction-quote-quotes {
+      margin: 0;
+      opacity: 0.8;
+      color: white;
+      font-family: "Futura Demi CTT";
+      font-size: 140px;
+      font-weight: 600;
+      letter-spacing: -0.1px;
+      line-height: 0; }
+    .introduction-quote-text {
+      width: 70%;
+      text-align: center;
+      margin-top: 20px; }
+    .introduction-quote-view {
+      margin-top: 10px;
+      color: #EEBE50; }
+    .introduction-quote-video {
+      width: 71%;
+      height: 210px;
+      border: 2px solid #EEBE50;
+      border-radius: 50px;
+      position: absolute;
+      top: 82%;
+      background: url("../img/videobg.png") no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .introduction-quote-video p {
+        opacity: 1;
+        color: white;
+        font-family: "Sunday";
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        line-height: 25px;
+        margin: 0; }
+      .introduction-quote-video img {
+        width: 100px; }
+    .introduction-quote::after {
+      content: "''";
+      font-size: 400px;
+      opacity: 0.05;
+      position: absolute;
+      top: 33%;
+      left: 50%;
+      letter-spacing: -5px; }
+
+.recipes {
+  width: 100%;
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2; }
+  .recipes-header {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-top: 220px;
+    flex-direction: column; }
+    .recipes-header-text {
+      width: 650px;
+      opacity: 0.8;
+      color: black;
+      font-family: "Proxima Nova Bl";
+      font-size: 58px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      line-height: 70px;
+      margin: 20px 20px 20px 70px; }
+      .recipes-header-text span {
+        color: #edc56d; }
+    .recipes-header-describtion {
+      width: 400px;
+      opacity: 0.7;
+      color: black;
+      font-family: "Proxima Nova Lt";
+      font-size: 15px;
+      font-weight: 300;
+      letter-spacing: 0.4px;
+      line-height: 30px;
+      margin: 13px 13px 13px 70px; }
+      .recipes-header-describtion span {
+        font-family: 'Proxima Nova Rg';
+        font-weight: 700; }
+  .recipes-slider {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 45px; }
+    .recipes-slider-strip {
+      width: 5500px;
+      display: flex;
+      padding-left: 40px;
+      padding-right: 40px;
+      position: relative;
+      transition: all ease 0.5s;
+      left: 0; }
+      .recipes-slider-strip-item {
+        width: 415px;
+        height: 455px;
+        position: relative;
+        margin-right: 70px; }
+        .recipes-slider-strip-item-yellowbg {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #edbb4c;
+          border-radius: 70px;
+          width: 235px;
+          height: 350px;
+          z-index: 1; }
+        .recipes-slider-strip-item-name {
+          opacity: 1;
+          color: white;
+          font-family: "Sunday";
+          font-size: 25px;
+          font-weight: 400;
+          letter-spacing: 0.5;
+          line-height: 35px;
+          width: 385px;
+          height: 420px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 2;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end; }
+          .recipes-slider-strip-item-name img {
+            width: 99%;
+            position: absolute; }
+          .recipes-slider-strip-item-name span {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            text-align: center;
+            height: 25%; }
+  .recipes-buttons {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 25%;
+    right: 12%; }
+    .recipes-buttons button {
+      width: 55px;
+      height: 55px;
+      background-color: #EDBB4C;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .recipes-buttons button img {
+        width: 10px; }
+      .recipes-buttons button:hover {
+        cursor: pointer; }
+  .recipes-feedback {
+    width: 75%;
+    border-radius: 60px;
+    background-color: #F5F5F5;
+    display: flex;
+    margin-top: 115px;
+    position: relative;
+    margin-bottom: 195px;
+    -webkit-box-shadow: 10px 10px 53px 3px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 10px 10px 53px 3px rgba(0, 0, 0, 0.37);
+    box-shadow: 10px 10px 53px 3px rgba(0, 0, 0, 0.37); }
+    .recipes-feedback-header {
+      opacity: 0.8;
+      color: black;
+      font-family: "Proxima Nova Rg";
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 53px;
+      width: 46%;
+      margin-top: 40px;
+      margin-left: 60px; }
+      .recipes-feedback-header span {
+        color: #edbb4c; }
+    .recipes-feedback-action {
+      width: 43%;
+      margin-top: 40px;
+      margin-left: 60px; }
+      .recipes-feedback-action-describtion {
+        margin-top: 5px;
+        margin-left: 0;
+        opacity: 0.7;
+        color: black;
+        font-family: "Proxima Nova Rg";
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        line-height: 35px; }
+      .recipes-feedback-action input {
+        width: 57%;
+        height: 60px;
+        border: 3px solid #3a6149;
+        border-radius: 40px;
+        outline: none;
+        padding-left: 50px;
+        opacity: 1;
+        color: #313131;
+        font-family: "Proxima Nova Rg";
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 35px;
+        display: block;
+        margin-top: 20px; }
+        .recipes-feedback-action input::-webkit-input-placeholder {
+          opacity: 0.7; }
+        .recipes-feedback-action input:-moz-placeholder {
+          opacity: 0.7; }
+        .recipes-feedback-action input::-moz-placeholder {
+          opacity: 0.7; }
+        .recipes-feedback-action input:-ms-input-placeholder {
+          opacity: 0.7; }
+      .recipes-feedback-action button {
+        width: 280px;
+        height: 65px;
+        box-shadow: 0 0 64px rgba(239, 192, 84, 0.49);
+        border-radius: 42px;
+        border: 3px solid #edbb4c;
+        background-image: linear-gradient(175deg, #f7df83 0%, #edbb4c 100%);
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        color: black;
+        font-family: "Proxima Nova Rg";
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 0;
+        margin: 25px 25px 40px; }
+        .recipes-feedback-action button:hover {
+          cursor: pointer; }
+        .recipes-feedback-action button img {
+          max-width: 20px;
+          margin-left: 25px;
+          margin-right: 0; }
+        .recipes-feedback-action button span {
+          margin-left: 5px; }
+        .recipes-feedback-action button span {
+          font-family: "Proxima Nova Bl";
+          font-weight: 900; }
+    .recipes-feedback-path {
+      position: absolute;
+      width: 63px;
+      height: 57px;
+      left: 46%;
+      top: 45%; }
+    .recipes-feedback-avocado {
+      position: absolute;
+      top: -15px;
+      right: 96.5%;
+      width: 155px; }
+    .recipes-feedback-casserole {
+      position: absolute;
+      right: 64%;
+      top: 68%;
+      width: 440px; }
+  .recipes-advice {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    height: 150px;
+    width: 54.5%;
+    z-index: 2;
+    background: url("../img/yellowbg.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; }
+    .recipes-advice-text {
+      display: flex;
+      width: 83%;
+      justify-content: space-between;
+      align-items: center; }
+      .recipes-advice-text p {
+        opacity: 0.9;
+        color: black;
+        font-family: "Sunday";
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        line-height: 29px;
+        margin: 0;
+        text-align: center; }
+      .recipes-advice-text img {
+        width: 60px; }
+  .recipes-cabbage {
+    position: absolute;
+    top: 80.5%;
+    left: 86%;
+    width: 320px;
+    z-index: 3; }
+  .recipes-lime {
+    position: absolute;
+    width: 115px;
+    left: -3.5%;
+    top: 10%; }
+
+.answers {
+  width: 100%;
+  background: url("../img/mainbg.png") repeat;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1; }
+  .answers-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%; }
+    .answers-main-question {
+      opacity: 0.7;
+      color: white;
+      font-family: "Proxima Nova Rg";
+      font-size: 49px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      line-height: 55px;
+      width: 45%;
+      align-self: flex-end;
+      margin-top: 110px; }
+    .answers-main-sentences {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      width: 108%; }
+      .answers-main-sentences-sentence {
+        width: calc(100%/3);
+        opacity: 1;
+        color: white;
+        font-family: "Proxima Nova Rg";
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.7px;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px; }
+        .answers-main-sentences-sentence p {
+          text-align: center;
+          margin-bottom: 30px;
+          width: 82.5%; }
+        .answers-main-sentences-sentence-strip {
+          width: 90px;
+          height: 6px;
+          opacity: 0.3;
+          border-radius: 40px;
+          background-color: #eebe50; }
+    .answers-main button {
+      width: 280px;
+      height: 60px;
+      box-shadow: 0 0 64px rgba(239, 192, 84, 0.49);
+      border-radius: 42px;
+      border: 3px solid #edbb4c;
+      background-image: linear-gradient(175deg, #f7df83 0%, #edbb4c 100%);
+      outline: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      color: black;
+      font-family: "Proxima Nova Rg";
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      line-height: 0;
+      margin-top: 55px;
+      margin-bottom: 150px; }
+      .answers-main button:hover {
+        cursor: pointer; }
+      .answers-main button img {
+        max-width: 20px;
+        margin-left: 25px;
+        margin-right: 0; }
+      .answers-main button span {
+        margin-left: 5px; }
+      .answers-main button span {
+        font-family: "Proxima Nova Bl";
+        font-weight: 900; }
+  .answers-foryou {
+    content: '';
+    opacity: 0.1;
+    color: white;
+    font-family: "Proxima Nova Bl";
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 0;
+    position: absolute;
+    top: 25%;
+    left: 45%; }
+
+.start {
+  width: 100%;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .start-main {
+    width: 75%;
+    display: flex;
+    margin-top: 165px; }
+    .start-main-path {
+      display: none;
+      position: absolute;
+      width: 63px;
+      height: 57px;
+      left: 46%;
+      top: 40%; }
+    .start-main-action {
+      display: flex;
+      flex-direction: column;
+      width: 53%; }
+      .start-main-action form {
+        width: 100%; }
+      .start-main-action-mobiledescribtion {
+        opacity: 0.7;
+        color: black;
+        font-family: "Proxima Nova Lt";
+        font-size: 35px;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        line-height: 60px;
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 100px; }
+        .start-main-action-mobiledescribtion span {
+          font-family: 'Proxima Nova Rg';
+          font-weight: 700; }
+      .start-main-action-header {
+        opacity: 0.8;
+        color: black;
+        font-family: "Proxima Nova Rg";
+        font-size: 39px;
+        font-weight: 700;
+        letter-spacing: 1.15px;
+        line-height: 58px;
+        margin: 0; }
+        .start-main-action-header span {
+          color: #edbb4c; }
+      .start-main-action-describtion {
+        opacity: 0.7;
+        color: black;
+        font-family: "Proxima Nova Lt";
+        font-size: 17px;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        line-height: 33px;
+        margin-top: 20px;
+        width: 81%; }
+        .start-main-action-describtion span {
+          font-family: 'Proxima Nova Rg';
+          font-weight: 700; }
+      .start-main-action input {
+        width: 47%;
+        height: 60px;
+        border: 3px solid #3a6149;
+        border-radius: 40px;
+        outline: none;
+        padding-left: 50px;
+        opacity: 1;
+        color: #313131;
+        font-family: "Proxima Nova Rg";
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 35px;
+        display: block;
+        margin-top: 45px; }
+        .start-main-action input::-webkit-input-placeholder {
+          opacity: 0.7; }
+        .start-main-action input:-moz-placeholder {
+          opacity: 0.7; }
+        .start-main-action input::-moz-placeholder {
+          opacity: 0.7; }
+        .start-main-action input:-ms-input-placeholder {
+          opacity: 0.7; }
+      .start-main-action button {
+        width: 280px;
+        height: 60px;
+        box-shadow: 0 0 64px rgba(239, 192, 84, 0.49);
+        border-radius: 42px;
+        border: 3px solid #edbb4c;
+        background-image: linear-gradient(175deg, #f7df83 0%, #edbb4c 100%);
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        color: black;
+        font-family: "Proxima Nova Rg";
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 0;
+        margin-top: 30px; }
+        .start-main-action button:hover {
+          cursor: pointer; }
+        .start-main-action button img {
+          max-width: 20px;
+          margin-left: 25px;
+          margin-right: 0; }
+        .start-main-action button span {
+          margin-left: 5px; }
+        .start-main-action button span {
+          font-family: "Proxima Nova Bl";
+          font-weight: 900; }
+    .start-main-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      width: 48%;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 3; }
+      .start-main-gallery-pictures {
+        width: 630px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px; }
+        .start-main-gallery-pictures img {
+          width: 48%;
+          height: 220px;
+          background: url("../img/gallerybg.png") no-repeat;
+          background-size: contain;
+          opacity: 0.9; }
+  .start-hop {
+    position: absolute;
+    width: 200px;
+    left: 33%;
+    top: -8%;
+    z-index: 2; }
+  .start-ahead {
+    position: absolute;
+    right: 0;
+    top: -9%;
+    width: 300px;
+    height: 345px;
+    background-color: #edbb4c;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .start-ahead-text {
+      opacity: 0.8;
+      color: white;
+      font-family: "Proxima Nova Lt";
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 95px;
+      margin-right: 60px; }
+      .start-ahead-text img {
+        width: 20px; }
+      .start-ahead-text div {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
+
+.about {
+  width: 100%;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+  .about-header {
+    display: flex;
+    width: 100%;
+    opacity: 0.8;
+    color: black;
+    font-family: "Proxima Nova Bl";
+    font-size: 98px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 95px;
+    position: relative;
+    align-items: center;
+    justify-content: center; }
+    .about-header-strip {
+      width: 28%;
+      height: 15px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: #f0c65d;
+      position: absolute;
+      right: 0; }
+  .about-yellowstrip {
+    width: 100%;
+    height: 225px;
+    background-color: #f0c65d;
+    position: absolute;
+    top: 345px; }
+  .about-card {
+    width: 88%;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    background: url("../img/mainbg.png") no-repeat;
+    z-index: 2;
+    margin-top: 85px;
+    margin-bottom: 265px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    position: relative;
+    background-size: cover;
+    z-index: 3; }
+    .about-card-main {
+      width: 86%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .about-card-main img {
+        width: 610px;
+        margin-top: -60px; }
+      .about-card-main-describtion {
+        width: 35%;
+        margin-right: 90px;
+        opacity: 0.9;
+        color: #ffffff;
+        font-family: "Proxima Nova Rg";
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        line-height: 30px; }
+        .about-card-main-describtion span {
+          display: block;
+          margin-top: 40px;
+          margin-bottom: 30px;
+          font-size: 25px;
+          font-weight: 700;
+          color: white; }
+      .about-card-main-info {
+        display: flex;
+        width: 55%;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        opacity: 0.9;
+        color: #ffffff;
+        font-family: "Proxima Nova Lt";
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+        line-height: 30px; }
+        .about-card-main-info p {
+          margin-bottom: 10px;
+          margin-top: 10px;
+          opacity: 0.9;
+          color: white;
+          font-family: "Proxima Nova Rg";
+          font-size: 45px;
+          font-weight: 700;
+          letter-spacing: 0.8px;
+          line-height: 30px; }
+        .about-card-main-info-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 28%;
+          text-align: center; }
+    .about-card-video {
+      width: 37%;
+      height: 130px;
+      background: url("../img/yellowbg2.png") no-repeat;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-bottom-right-radius: 90px;
+      display: flex;
+      justify-content: center; }
+      .about-card-video img {
+        opacity: 1;
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        bottom: -20px;
+        left: -70px; }
+      .about-card-video p {
+        width: 50%;
+        margin-top: 25px;
+        opacity: 0.8;
+        color: white;
+        font-family: "Proxima Nova Rg";
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        line-height: 23px; }
+    .about-card-broccoli {
+      position: absolute;
+      width: 150px;
+      left: -1%;
+      top: -15%; }
+    .about-card-cheburek {
+      width: 380px;
+      position: absolute;
+      top: 79%;
+      left: 86%; }
+  .about-advice {
+    width: 87%;
+    height: 190px;
+    background-color: #edbb4c;
+    position: absolute;
+    top: 88%;
+    right: 0;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2; }
+    .about-advice-quotes {
+      margin: 65px 0 0;
+      opacity: 0.8;
+      color: black;
+      font-family: "Proxima Nova Rg";
+      font-size: 140px;
+      font-weight: 600;
+      letter-spacing: -0.1px;
+      line-height: 0; }
+    .about-advice-mobiletext, .about-advice-text {
+      width: 45%;
+      margin: 0;
+      opacity: 0.8;
+      color: black;
+      font-family: "Sunday";
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 23px; }
+    .about-advice-mobiletext {
+      display: none; }
+
+.footer {
+  width: 100%;
+  background: url("../img/mainbg.png") repeat-x;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative; }
+  .footer-toggler {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    left: 65px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between; }
+    .footer-toggler div:first-child {
+      width: 25px;
+      height: 1px;
+      border-top: 4px solid #B6B2B0; }
+    .footer-toggler div:last-child {
+      width: 55px;
+      height: 1px;
+      border-top: 4px solid #B6B2B0; }
+  .footer-path {
+    display: none;
+    position: absolute;
+    width: 63px;
+    height: 57px;
+    left: 46%;
+    top: 40%; }
+  .footer-mobiletext {
+    display: none;
+    opacity: 0.8;
+    color: white;
+    font-family: "Proxima Nova Lt";
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 0.2;
+    line-height: 50px;
+    text-align: center;
+    width: 60%; }
+  .footer-main {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer-main form {
+      width: 24%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .footer-main-describtion {
+      display: none;
+      opacity: 0.7;
+      color: white;
+      font-family: "Proxima Nova Lt";
+      font-size: 35px;
+      font-weight: 300;
+      letter-spacing: 0.4px;
+      line-height: 60px;
+      margin: 70px 13px 150px 70px;
+      text-align: center; }
+      .footer-main-describtion span {
+        font-family: 'Proxima Nova Rg';
+        font-weight: 700; }
+    .footer-main-header {
+      opacity: 0.8;
+      color: white;
+      font-family: "Proxima Nova Rg";
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      line-height: 60px;
+      margin-top: 145px;
+      margin-bottom: 0; }
+      .footer-main-header span {
+        color: #edbb4c; }
+    .footer-main-text {
+      margin-top: 0;
+      margin-bottom: 40px;
+      opacity: 0.3;
+      color: white;
+      font-family: "Proxima Nova Lt";
+      font-size: 15px;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+      line-height: 40px; }
+      .footer-main-text span {
+        font-family: "Proxima Nova Bl";
+        font-weight: 900; }
+      .footer-main-text:hover {
+        cursor: pointer; }
+    .footer-main input {
+      width: 100%;
+      height: 60px;
+      border: 3px solid #3a6149;
+      border-radius: 40px;
+      outline: none;
+      padding-left: 50px;
+      opacity: 1;
+      color: #313131;
+      font-family: "Proxima Nova Rg";
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      line-height: 35px;
+      display: block;
+      border: 3px solid #a4a2a1;
+      margin-top: 20px;
+      margin-bottom: 5px;
+      background-color: transparent;
+      color: white; }
+      .footer-main input::-webkit-input-placeholder {
+        opacity: 0.7; }
+      .footer-main input:-moz-placeholder {
+        opacity: 0.7; }
+      .footer-main input::-moz-placeholder {
+        opacity: 0.7; }
+      .footer-main input:-ms-input-placeholder {
+        opacity: 0.7; }
+  .footer-menu {
+    width: 80%;
+    height: 90px;
+    display: flex;
+    align-items: center; }
+    .footer-menu img {
+      width: 100px;
+      margin-right: 60px; }
+    .footer-menu-header {
+      opacity: 0.5;
+      color: white;
+      font-family: "Sunday";
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 30px;
+      margin-right: 200px; }
+    .footer-menu-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 35%;
+      margin-right: 20px;
+      opacity: 0.8;
+      color: #ffffff;
+      font-family: "Proxima Nova Lt";
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 0; }
+      .footer-menu-nav-item span:hover {
+        cursor: pointer;
+        border-bottom: 2px solid #f1c961;
+        font-weight: 700;
+        color: white; }
+    .footer-menu button {
+      width: 235px;
+      height: 53px;
+      box-shadow: 0 0 64px rgba(239, 192, 84, 0.49);
+      border-radius: 42px;
+      border: 3px solid #edbb4c;
+      background-image: linear-gradient(175deg, #f7df83 0%, #edbb4c 100%);
+      outline: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      color: black;
+      font-family: "Proxima Nova Rg";
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 0; }
+      .footer-menu button:hover {
+        cursor: pointer; }
+      .footer-menu button img {
+        max-width: 20px;
+        margin-left: 25px;
+        margin-right: 0; }
+      .footer-menu button span {
+        margin-left: 5px; }
+  .footer-ahead {
+    opacity: 0.8;
+    color: white;
+    font-family: "Proxima Nova Lt";
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 95px;
+    position: absolute;
+    top: 70px;
+    left: 50px; }
+    .footer-ahead img {
+      width: 20px;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+    .footer-ahead div {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+
+/*# sourceMappingURL=stylesheet.css.map */
